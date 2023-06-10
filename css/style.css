@@ -142,3 +142,73 @@ nav .navlinks li a {
 .hero-text p {
     color: #e5e5e5;
 }
+
+.btn-group {
+    margin: 45px 0;
+}
+
+.btn-group .btn {
+    border-color: #e5e5e5;
+    color: #fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0;
+    margin-right: 7px;
+    border-radius: 30px;
+    border: 2px solid #e5e5e5;
+    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 75%);
+}
+
+.btn.active {
+    border-color: #007ced;
+}
+
+@media(max-width: 930px)
+{
+    nav .togglebtn {
+        display: initial;
+    }
+
+    .click {
+        top: 45px;
+    }
+
+    .click span {
+        position: absolute;
+        margin-top: 12px;
+    }
+
+    .click span:first-child {
+        transform: rotate(-40deg);
+    }
+
+    .click span:nth-child(2)
+    {
+        opacity: 0;
+        margin: 0;
+    }
+
+    .click span:last-child {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    nav .navlinks {
+        position: absolute;
+        top: 110px;
+        right: 0;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+
+    nav .navlinks li {
+        display: block;
+        
+    }
+}
