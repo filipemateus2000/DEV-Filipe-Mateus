@@ -12,6 +12,7 @@
 
 body {
     overflow-x: hidden;
+   
 }
 
 .hero-header {
@@ -163,7 +164,20 @@ nav .navlinks li a {
     border-color: #007ced;
 }
 
-@media(max-width: 930px)
+.hero-text .social i {
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.hero-text .social i:hover {
+    color: #007ced;
+    transform: rotate(360deg);
+}
+
+
+@media(max-width: 1000px)
 {
     nav .togglebtn {
         display: initial;
@@ -196,7 +210,7 @@ nav .navlinks li a {
     nav .navlinks {
         position: absolute;
         top: 110px;
-        right: 0;
+        right: -60%;
         bottom: 0;
         width: 60%;
         height: 100vh;
@@ -209,6 +223,27 @@ nav .navlinks li a {
 
     nav .navlinks li {
         display: block;
-        
+    }
+
+    nav .navlinks li a {
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    nav .navlinks.open {
+        right: 0;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .container {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .hero-text {
+        padding: 40px 0px;
     }
 }
