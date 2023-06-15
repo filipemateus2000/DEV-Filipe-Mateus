@@ -9,7 +9,7 @@ togglebtn.addEventListener("click", function(){
     nav.classList.toggle("open");
 })
 
-var typed=new typed(".input" ,{
+var typed=new Typed(".input" ,{
     strings:["Desenvolvedor Web Full Stack" , "Data Science", "Auxiliar Administrativo"],
     typedSpeed: 70,
     backSpeed: 55,
